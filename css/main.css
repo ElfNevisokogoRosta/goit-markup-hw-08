@@ -50,6 +50,10 @@ body {
   }
 }
 
+.bodyblock {
+  overflow: hidden;
+}
+
 .header--bordered {
   border-bottom: 1px solid #ECECEC;
 }
@@ -366,6 +370,12 @@ body {
     margin: 0;
     margin-left: 30px;
   }
+}
+
+.mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer {

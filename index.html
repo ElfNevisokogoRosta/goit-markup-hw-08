@@ -12,19 +12,19 @@
   <link rel="stylesheet" href="./dist/css/main.min.css">
   <title>WebStudio</title>
 </head>
-<body>
+<body class="body " data-body>
   <header class="header ">
     <div class="container header-container">
       <div class="nav-container">
         <a class="header__icon" href="./index.html">Web<span class="header__icon--secondary-color">Studio</span></a>
-        <button class="header-mobile__btn" type="button"> 
+        <button class="header-mobile__btn" type="button" data-menu-open> 
           <svg class="header-mobile__icon">
             <use class="header-mobile__icon" href="./img/icons.svg#mobile-menu-closed"></use>
           </svg>
         </button>
       </div>
-      <div class="nav-container__wraper">
-        <button class="header-mobile__btn" type="button">
+      <div class="nav-container__wraper" data-menu>
+        <button class="header-mobile__btn" type="button" data-menu-close>
           <svg class="header-mobile__icon">
             <use class="header-mobile__icon" href="./img/icons.svg#mobile-menu-opened"></use>
           </svg>
