@@ -1,0 +1,58 @@
+.hero{
+  padding: 7.375rem 0px;
+  max-width: 760px;
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), 
+  url(../../../img/index/mobbghero/headerimg-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx)  {
+  .hero{
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)),
+   url(../../../img/index/mobbghero/headerimg@2x-min.jpg);
+}      
+}
+@include tablet {
+.hero{
+max-width: 1190px;
+background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), 
+url(../../../img/index/herobgtab/headerimg-min.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx)  {
+  .hero{
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)),
+   url(../../../img/index/herobgtab/headerimg@2x-min.jpg);
+}      
+}}
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero__title{
+  font-weight: 900;
+  font-size: 1.625rem;
+  line-height: (42/26);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $hero-title;
+}
+.hero__btn{
+  @include btn;
+  width: 12.5rem;
+  height:3.125rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: (30/16);
+  letter-spacing: 0.06em;
+  color: $hero-title;
+  background-color: $btn-bg-color;
+  border-radius: 4px;
+}

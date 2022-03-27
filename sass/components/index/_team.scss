@@ -1,0 +1,82 @@
+.team{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $team-bg-color;
+}
+.title-team{
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: (33/28);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+}
+.team-list{
+    @include list;
+    max-width: 480px;
+    width: 100%;
+}
+.team__element{
+    background-color: $team-bg-card;
+    padding-bottom: 1.25rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+.img{
+    max-width: 480px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.team-info__title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: (19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+}
+.team-info__dis{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: (19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+}
+.team-icon-list{
+    @include list;
+    margin-top: 30px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    width: 206px;
+}
+.team-icon__social-icon{
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: currentColor;
+}
+.team-icon__element{
+    @include link;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $team-i-color;
+    &:hover{
+        background-color: $accent-color;
+    }
+}

@@ -1,0 +1,73 @@
+.portfolion-list{
+    @include list;
+    margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-list__field{
+    @include link;
+    max-width: 450px;
+    transition: box-shadow 250ms $best-cubic;
+    border: 1px solid $portofolio-border-c;
+    margin-bottom: 30px;
+    &:hover, &:focus{
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+  0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    }
+    
+    &:hover .portofolio-list__discription{
+        transform: translateY(0%);
+    } 
+    &:focus .portofolio-list__discription{
+        transform: translateY(0%);
+      }
+}
+.portofolio-list__wraper{
+    position: relative;
+    overflow: hidden;
+}
+.portofolio-list__discription{
+    margin: 0px;
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 63px 24px;
+    height: 100%;
+    width: 100%;
+    transform: translateY(105%);
+    transition: transform 250ms $best-cubic;
+    background-color: $wraper-bg-color;
+    color: $portofolio-wraper-c;
+  }
+.portofolio-dis__title{
+    @include link;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: (36/18);
+    letter-spacing: 0.06em;
+    color: $title-color;
+}
+.portofolio-dis__text{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: (30/16);
+    letter-spacing: 0.03em;
+}
+.portofolio-dis{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+.portfolio-dis__text{
+    font-weight: normal;
+font-size: 1rem;
+line-height: (30/16);
+letter-spacing: 0.03em;
+color: $primary-text-color;
+}  

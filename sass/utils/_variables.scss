@@ -1,0 +1,42 @@
+$accent-color: #2196F3;
+$title-color:#212121;
+$header-bg-color: #ffffff;
+$hero-title: #ffffff;
+$footer-main: #ffffff;
+$btn-bg-color: #2196F3;
+$benefits-ibg: #F5F4FA;
+$main-title-color: #212121;
+$primary-text-color:#757575;
+$team-bg-color: #F5F4FA;
+$team-bg-card: #ffffff;
+$team-i-color: #AFB1B8;
+$company-i-color: #AFB1B8;
+$footer-bgc: #2F303A;
+$footer-link-color: rgba(255, 255, 255, 0.6);
+$footer-icon-bg: rgba(255, 255, 255, 0.1);
+$modal-bg-color: #ffffff;
+$modal-btn-color: #000000;
+$radio-btn-bg: #F5F4FA;
+$radio-hover-c: #ffffff;
+$radio-hover-bg: #2196F3;
+$portofolio-border-c: #eeeeee;
+$wraper-bg-color: #2196F3;
+$portofolio-wraper-c: #ffffff;
+$main-bg-c: #ffffff;
+$header-border: #ECECEC;
+
+$best-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+@mixin phone {
+    @media  screen and (min-width: 480px ){
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: 768px ) {
+        @content;
+    }
+}
+@mixin desktope {
+    @media screen and (min-width: 1200px) {        
+    }
+}
