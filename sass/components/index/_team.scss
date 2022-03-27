@@ -13,7 +13,6 @@
 }
 .team-list{
     @include list;
-    max-width: 480px;
     width: 100%;
 }
 .team__element{
@@ -76,7 +75,28 @@
     justify-content: center;
     align-items: center;
     color: $team-i-color;
+    transition: color  250ms $best-cubic;
     &:hover{
         background-color: $accent-color;
+        color: $team-bg-card;
+    }
+}
+
+@include tablet{
+    .team-list{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 30px;
+    }
+    .team-list .team__element{
+        margin: 0;
+    }
+}
+@include desktop{
+    .team{
+        padding: 94px 0;
+    }
+    .team-list{
+        grid-template-columns: repeat(4, 1fr);
     }
 }

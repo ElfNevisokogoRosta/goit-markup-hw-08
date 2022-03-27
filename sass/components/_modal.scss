@@ -164,7 +164,7 @@
 .form__checkbox--hiden{
     &:checked + .form__checkbox{
         background-color: $accent-color;
-  background-image: url(../img/index/icons.svg#full-check);
+  background-image: url(./img/icons.svg#full-check);
   background-size: contain;
   background-origin: border-box;
   border-color:$accent-color;

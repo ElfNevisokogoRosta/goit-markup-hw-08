@@ -4,7 +4,6 @@
 }
 .benefits-list{
     @include list;
-    max-width: 30rem;
     width: 100%;
     display: grid;
     gap: 30px;
@@ -44,4 +43,14 @@
     line-height: 1.5rem;
     letter-spacing: 0.03em;
     color: $primary-text-color;
+}
+@include tablet{
+    .benefits-list{
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+@include desktop{
+    .benefits-list{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

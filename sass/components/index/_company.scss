@@ -14,9 +14,23 @@
 }
 .company-list{
     @include list;
+    margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.875rem;
+}
+@include tablet{
+    .company-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@include desktop{
+    .company-list{
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .company{
+        padding: 94px 0;
+    }
 }
 .company-list__field{
     @include link;
@@ -29,6 +43,16 @@
     align-items: center;
     border: 1px solid $company-i-color;
     border-radius: 4px;
+    transition: color   250ms $best-cubic,
+                border-color    250ms $best-cubic;
+    &:hover{
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+    &:focus{
+        color: $accent-color;
+        border-color: $accent-color;
+    }
 }
 .company-list__icon{
     fill: currentColor;

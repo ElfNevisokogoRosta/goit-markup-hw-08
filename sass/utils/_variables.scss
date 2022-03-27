@@ -24,19 +24,6 @@ $wraper-bg-color: #2196F3;
 $portofolio-wraper-c: #ffffff;
 $main-bg-c: #ffffff;
 $header-border: #ECECEC;
+$wwd-pre-title-c: #ffffff;
 
 $best-cubic: cubic-bezier(0.4, 0, 0.2, 1);
-@mixin phone {
-    @media  screen and (min-width: 480px ){
-        @content;
-    }
-}
-@mixin tablet {
-    @media screen and (min-width: 768px ) {
-        @content;
-    }
-}
-@mixin desktope {
-    @media screen and (min-width: 1200px) {        
-    }
-}

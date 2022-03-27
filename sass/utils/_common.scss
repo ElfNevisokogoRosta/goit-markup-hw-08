@@ -20,12 +20,7 @@
     padding-left: 15px;
     padding-right: 15px; 
   }
-  @include tablet{
-    .container{
-      max-width: 48rem;
-      width: 100%;
-    }
-  }
+  
   .section-title{
     margin: 0px;
     text-align: center;
@@ -53,3 +48,30 @@
     margin: 0;
     padding: 0;
   }
+  @mixin phone {
+    @media  screen and (min-width: 480px ){
+        @content;
+    }
+  }
+  @mixin tablet {
+      @media screen and (min-width: 768px ) {
+        @content;
+      }
+  }
+  @mixin desktop {
+      @media screen and (min-width: 1200px) {
+        @content;        
+      }
+  }
+@include tablet{
+  .container{
+    max-width: 768px;
+    width: 100%;
+  }
+}
+@include desktop{
+  .container{
+    max-width: 1200px;
+    width: 100%;
+  }
+}

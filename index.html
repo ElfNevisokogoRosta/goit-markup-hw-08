@@ -51,7 +51,7 @@
         <div class="contact">
           <a class="contact__item" href="mailto:info@devstudio.com">
             <svg class="contact__icon" width="16" height="12">
-              <use href="./img/index/icons.svg#icon-mail"></use>
+              <use href="./img/icons.svg#icon-mail"></use>
             </svg>
             info@devstudio.com
           </a>
@@ -142,12 +142,16 @@
       </div>
     </section>
     <section class="what-we-do">
-      <div  class="wwd__container">
+      <div  class="wwd__container container">
       <h2 class="wwd__title">Чем мы занимаемся</h2>
       <ul class="wwd-list">
         <li class="wwd-item"> 
           <img class="wwd-item__img img"
-          src="./img/index/whatwedo/box1.jpg" 
+          srcset="
+          ./img/index/desktop/img.jpg    370w,
+          ./img/index/desktop/img@2x.jpg 640w,
+          ./img/index/desktop/img@3x.jpg 1110w"
+          src="./img/index/desktop/img.jpg"
           alt="Десктопные приложения"
           width="370"
           >
@@ -155,7 +159,11 @@
         </li>
         <li class="wwd-item"> 
           <img class="wwd-item__img img"
-          src="./img/index/whatwedo/box2.jpg" 
+          srcset="
+          ./img/index/mob/img-min.jpg    370w,
+          ./img/index/mob/img@2x-min.jpg 640w,
+          ./img/index/mob/img@3x-min.jpg 1110w"
+          src="./img/index/mob/img-min.jpg" 
           alt="Мобильные приложения"
           width="370"
           >
@@ -163,7 +171,11 @@
         </li>
         <li class="wwd-item"> 
           <img class="wwd-item__img img"
-          src="./img/index/whatwedo/box2.jpg" 
+          srcset="
+          ./img/index/design/img-min.jpg    370w,
+          ./img/index/design/img@2x-min.jpg 640w,
+          ./img/index/design/img@3x-min.jpg 1110w"
+          src="./img/index/design/img-min.jpg" 
           alt="Дизайнерские решения"
           width="370"
           >
@@ -410,13 +422,13 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-container">
       <div class="tablet-container">
         
         <div class="adress-container">
           <a href="./index.html" class="footer__icon link">Web<span class="footer__icon--main-color">Studio</span></a>
         <address class="address">
-        <div class="address__container">
+        <div class="">
           <a href="" class="address__street">г. Киев, пр-т Леси Украинки, 26</a>
           <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
           <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
@@ -486,7 +498,7 @@
           <span class="form__label">Имя</span>
           <span class="icon-container">
             <svg class="form__icon">
-              <use href="./img/index/icons.svg#modalicon"></use>
+              <use href="./img/icons.svg#modalicon"></use>
             </svg>
           </span>
           <input class="form__input" type="text" name="name" placeholder=" ">
@@ -495,7 +507,7 @@
           <span class="form__label">Телефон</span>
           <span class="icon-container">
             <svg class="form__icon">
-              <use href="./img/index/icons.svg#modalphone"></use>
+              <use href="./img/icons.svg#modalphone"></use>
             </svg>
           </span>
           <input class="form__input" type="tel" name="tel" placeholder=" ">
@@ -504,7 +516,7 @@
             <span class="form__label">Почта</span>
             <span class="icon-container">
               <svg class="form__icon">
-                <use href="./img/index/icons.svg#modalmail"></use>
+                <use href="./img/icons.svg#modalmail"></use>
               </svg>
             </span>
           <input class="form__input" type="email" name="email">
@@ -530,7 +542,7 @@
     
     <button class="modal-close-btn" type="button" data-modal-close>
       <svg class="xros-btn">
-        <use href="./img/index/icons.svg#xros"></use>
+        <use href="./img/icons.svg#xros"></use>
       </svg>
     </button>
   </div>

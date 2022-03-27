@@ -81,6 +81,13 @@
     width: 2.75rem;
     height: 2.75rem;
     color: $footer-main;
+    transition: background-color 250ms $best-cubic;
+    &:hover{
+        background-color: $accent-color;
+    }
+    &:focus{
+        background-color: $accent-color;
+    }
 }
 .social__icon{
     width: 20px;
@@ -167,12 +174,64 @@
         flex-direction: column;
     }
     .adress-container{
-        margin-left: 4.75;
+        margin-left: 4.75rem;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
     .social__list{
         margin-top: 20px;
+    }
+}
+@include desktop{
+    .footer-container{
+        display: flex;
+    flex-direction: row;    }
+    .tablet-container{
+        justify-content: start;
+        width: 50%;
+    }
+    .follow{
+        margin-top: 12px;
+        width: 50%;
+    }
+    .follow-form-container{
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .follow-title{
+        text-align: left;
+    }
+    .follow-form__field{
+        margin: 0px;
+        width: 358px;
+    }
+    .follow-btn{
+        margin: 0;
+        max-width: 200px;
+        width: 100%;
+    }
+    .adress-container{
+        margin: 0;
+    }
+    .address__street{
+        text-align: start;
+    }
+    .address__link{
+        text-align: start;
+    }
+    .footer__icon{
+        text-align: start;
+    }
+    .tablet-container{
+        justify-content: space-between ;
+    }
+    .socials__title{
+        text-align: start;
+    }
+    .footer__socials{
+        margin-top: 12px;
     }
 }
