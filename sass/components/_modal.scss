@@ -24,7 +24,8 @@
         overflow: hidden;
     }
 .modal{
-    top: 93px;
+    top: 50%;
+    transform: translateY(-50%);
     position: absolute;
     background-color: $modal-bg-color;
     max-width: 450px;

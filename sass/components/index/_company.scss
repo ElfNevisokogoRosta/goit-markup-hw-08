@@ -25,7 +25,12 @@
     }
 }
 @include desktop{
+    .company__title{
+        font-size: 2.25rem;
+        line-height: (42/36);
+    }
     .company-list{
+        margin-top: 50px;
         grid-template-columns: repeat(6, 1fr);
     }
     .company{

@@ -35,6 +35,7 @@
 }
 .footer__icon{
     @include link;
+    margin-bottom: 20px;
     width: 100%;
     font-family: Raleway;
     font-weight: 700;

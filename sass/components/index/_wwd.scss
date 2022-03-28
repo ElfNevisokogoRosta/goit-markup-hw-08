@@ -3,7 +3,13 @@
         display: none;
     }
 }
+.what-we-do{
+    padding-bottom: 94px;
+}
 .wwd__title{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 2.25rem;
     line-height: (42/36);
@@ -33,8 +39,8 @@
     font-weight: 700;
     font-size: 14px;
     line-height: (16/14);
-    text-align: center;
     letter-spacing: 0.03em;
+    text-align: center;
     text-transform: uppercase;
     color: $wwd-pre-title-c;
 

@@ -75,7 +75,19 @@ url(../img/index/herobgtab/headerimg-min.jpg);
   background-color: $btn-bg-color;
   border-radius: 4px;
 }
+@include tablet{
+  .hero__title{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 22.5rem;
+    width: 100%;
+  }
+}
 @include desktop{
+  .hero__title{
+    max-width: 43.5rem;
+    width: 100%;
+  }
   .hero{
     padding: 200px 0px;
   }

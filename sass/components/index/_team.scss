@@ -4,6 +4,9 @@
     background-color: $team-bg-color;
 }
 .title-team{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 1.75rem;
     line-height: (33/28);
@@ -91,6 +94,9 @@
     .team-list .team__element{
         margin: 0;
     }
+    .team-info{
+        margin-top: 30px;
+    }
 }
 @include desktop{
     .team{
@@ -98,5 +104,14 @@
     }
     .team-list{
         grid-template-columns: repeat(4, 1fr);
+    }
+    .title-team{
+        font-size: 2.25rem;
+        line-height: (42/36);
+    }
+    .title-team{
+        margin-bottom: 50px;
+        font-size: 2.25rem;
+        line-height: (42/36);
     }
 }

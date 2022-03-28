@@ -45,6 +45,9 @@
     color: $primary-text-color;
 }
 @include tablet{
+    .benefits-content__title{
+        text-align: start;
+    }
     .benefits-list{
         grid-template-columns: repeat(2, 2fr);
     }

@@ -234,13 +234,24 @@
     }
     .contact__item{
         padding: 32px 0px;
+        font-size: 14px;
+        line-height: 16px;
         &+&{
             margin: 0;
             margin-left: 30px;
         }
         
     }
-}
+    .nav-bar{
+        gap:0;
+    }
+    .nav-bar__item{
+        &+&{
+            margin-left: 50px;
+        }
+    }
+}    
+
 .mobile-menu{
     display: flex;
 }
