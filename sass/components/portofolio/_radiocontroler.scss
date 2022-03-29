@@ -55,9 +55,10 @@
       margin-bottom: 30px;
     }
     .radio-btn-list__field{
+      margin-bottom: 0px;
       &+&{
         margin-left: 8px;
-        margin-bottom: 0px;
+        
       }
       
     }
@@ -70,5 +71,8 @@
     }
     .radio-btn-list{
       margin-bottom: 50px;
+      }
+      .radio-btn-list .radio-btn-list__field--lower{
+      margin-bottom: 0;
     }
   }

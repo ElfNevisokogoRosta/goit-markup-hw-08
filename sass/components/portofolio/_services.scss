@@ -76,9 +76,9 @@
     margin-bottom: 1.25rem;
 }
 .img-wrapper { 
-    position: reletive; 
+    position: relative; 
     padding-top: 65%;
-    
+    z-index: 1;
       img {
         position: absolute;
         top: 0; 
